@@ -58,8 +58,8 @@ add_theme_support( 'genesis-responsive-viewport' );
 //* Add support for after entry widget
 add_theme_support( 'genesis-after-entry-widget-area' );
 
-//* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 4 );
+// //* Add support for 3-column footer widgets
+// add_theme_support( 'genesis-footer-widgets', 4 );
 
 //* Add Image Sizes
 add_image_size( 'featured-image', 720, 400, TRUE );
@@ -153,9 +153,62 @@ function tf_google_map_api( $api ){
 	return $api;
 	
 }
-//JzR65Xtddm5a
-//$P$BvxR3ShyyRJfsLHItmYdSMW3x9e5.i1
-//* Register Widget areas
+
+
+
+genesis_register_sidebar( array(
+	'id'          => 'footer-one',
+	'class' => 'footer-widgets-1',
+	'name'        => __( 'Footer Widget 1', 'altitude' ),
+	'description' => __( 'This is the Footer Widget  input', 'altitude' ),
+) );
+
+
+genesis_register_sidebar( array(
+	'id'          => 'footer-two',
+	'name'        => __( 'Footer Widget 2', 'altitude' ),
+	'description' => __( 'This is the Footer Widget  input', 'altitude' ),
+) );
+
+
+genesis_register_sidebar( array(
+	'id'          => 'footer-three',
+	'name'        => __( 'Footer Widget 3', 'altitude' ),
+	'description' => __( 'This is the Footer Widget  input', 'altitude' ),
+) );
+
+genesis_register_sidebar( array(
+	'id'          => 'footer-four',
+	'name'        => __( 'Footer Widget 4', 'altitude' ),
+	'description' => __( 'This is the Footer Widget  input', 'altitude' ),
+) );
+
+
+
+add_action ('genesis_before_footer','footer_widgets', 2);
+function footer_widgets()  {
+		echo '<div class="footer-widgets"><div class="wrap"><div class="inner-wrap">';
+		genesis_widget_area ('footer-one', array(
+		'before' => '<div class="footer-widgets-1 widget-area">',
+		'after' => '</div>',
+	));
+		genesis_widget_area ('footer-two', array(
+		'before' => '<div class="footer-widgets-2 widget-area">',
+		'after' => '</div>',
+	));
+		genesis_widget_area ('footer-three', array(
+		'before' => '<div class="footer-widgets-3 widget-area">',
+		'after' => '</div>',
+	));
+		genesis_widget_area ('footer-four', array(
+		'before' => '<div class="footer-widgets-4 widget-area">',
+		'after' => '</div>',
+	));
+		echo '</div></div></div>';
+}
+
+
+
 genesis_register_sidebar( array(
 	'id'          => 'home-1-left',
 	'name'        => __( 'Home 1 Left', 'genesis-sample' ),

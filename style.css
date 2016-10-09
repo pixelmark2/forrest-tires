@@ -2492,13 +2492,264 @@ header.entry-header {
 .social-bar .simple-social-icons ul li a, 
 .social-bar .simple-social-icons ul li a:hover {
 	    border-radius: 100px;
-	        padding: 18px;
-	        color: #000 !important;
-	        font-size: 20px;
+      padding: 18px;
+      color: #000 !important;
+      font-size: 20px;
 }
 .widget ul > li {
 	margin: 0;
 }
+
+.home-2 .carousel-list .card-image,
+.home-2 .carousel-list .card-image .rimage {
+	height: 245px;
+}
+
+.home-2 .article,
+.home-2 .widget-wrap,
+.home-2 .widget {
+	display: inline-block;
+}
+/*HIDE THE TITLE OF THE BRANDS SLIDER*/
+.home-2 .inner_overlay,
+.home-2 .carousel-list .slick-dots {
+    display: none !important;
+}
+
+.home-2 h3 {
+	text-align: center;
+}
+.home-2 .carousel-list .card-image .rimage {
+	background-size: initial;
+	background-repeat: no-repeat;
+}
+
+.slick-list,
+.slick-slide {
+	outline: none !important;
+}
+.home-2 .widget {
+	width: 33%;
+	margin-bottom: 0px;
+	vertical-align: top;
+}
+.home-2 .widget a,
+.home-2 .widget article,
+.home-2 .widget .widget-wrap,
+.home-2 .widget .widget-wrap img {
+	width: 100%;
+}
+/*$P$BJYKl01xyJyW4t7Ej1u.yh1YDRG3jD.*/
+.register-bar .single-card.card-item {
+	display: block;
+}
+
+.register-bar .single-card.card-item .card-image {
+	width: 70%;
+	float: right;
+}
+
+.register-bar .single-card.card-item .card-details {
+	width: 30%;
+	float: left;
+	height: 170px;
+}
+
+.register-bar .single-card.card-item .card-image,
+.register-bar .single-card.card-item .rimage {
+	height: 170px;
+}
+.register-bar .card-details a {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.register-bar .card-details a .title {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.home-3 .wrap {
+	max-width: 10000px;
+}
+.home-widgets {
+	text-align: left;
+}
+/*CHANGE THE HEIGHT OF THE TUTORIALS CAROUSEL ON THE RIGHT*/
+.home-1-right .carousel-list .rimage.background-image,
+.home-1-right .carousel-list .card-image {
+    height: 271px !important;
+}
+.home-1-right .carousel-list .inner_overlay {
+	display: block;
+}
+
+.home-1-right .carousel-list .inside-title {
+	display: table;
+	height: 100%;
+}
+.home-1-right .carousel-list .inside-title .wrap {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*CHANGE HEIGHT OF TESTIMONIAL SECTION ON THE FRONT PAGE SLIDER ON THE LEFT*/
+.home-1-left .card-item .inner_overlay {
+	height: 216.25px;
+}
+
+.home-1-left .carousel-list .rimage.background-image,
+.home-1-left .carousel-list .card-image {
+    height: 485px;
+}
+
+.home-2 .wrap {
+	max-width: 1400px;
+}
+.home-2 {
+    background: white;
+}
+
+.home-2 h3 {
+	color: rgb(125,125,125);
+}
+.home-2 a {
+	text-decoration: none;
+}
+
+.register-bar h3 {
+	color: white;
+	font-size: 50px;
+	text-align: left !important;
+	text-transform: uppercase;
+}
+.register-bar a {
+	text-decoration: none;
+}
+
+
+.register-bar .card-details {
+	background-color: rgb(216,9,9);
+}
+.home-1-right .d2l-fp-benefits .rimage.background-image,
+.home-1-right .d2l-fp-benefits .card-image {
+   height: 215.25px !important;
+}
+.d2l-fp-benefits .inner_overlay {
+	bottom: 0;
+	text-align: left !important;
+}
+
+.home-1-left .full-carousel-cards .inner_overlay {
+	background-color: rgb(54,54,54);
+}
+
+.home-1-right .slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.site-footer {
+	padding-bottom: 80px;
+	text-align: left;
+	border: none;
+}
+.site-footer .wrap {
+	max-width: 1000px;
+}
+.footer-widgets {
+	padding-bottom: 0px;
+}
+.footer-widgets .textwidget a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 17px;
+}
+
+
+.footer-widgets-3 a {
+	padding-bottom: 20px;
+}
+
+
+
+.footer-widgets-1, 
+.footer-widgets-2, 
+.footer-widgets-3, 
+.footer-widgets-4 {
+	/*width: 21.875%; *//* 252px / 1152px */
+	width: 17.875%;
+}
+
+.footer-widgets-1, 
+.footer-widgets-2, 
+.footer-widgets-3 {
+	float: left;
+	margin-right: 4.166666666%; /* 48px / 1152px */
+}
+.footer-widgets-4 {
+	float: right;
+}
+.footer-widgets-4 {
+    width: 33%;
+}
+@media only screen and (max-width: 768px) {
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.footer-widgets-4 {
+		width: 47.9166666666%; /* 552px / 1152px */
+	}
+	
+	.footer-widgets-2 {
+		float: right;
+		margin: 0;
+	}
+
+}
+
+
+
+/*info@mesillavalleympo.org*/
+/*support@pixelmark.net*/
+/*LynnArnold@orbitalfrog.net, TheRetreatElPaso@gmail.com*/
+@media only screen and (max-width: 480px) {
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.footer-widgets-4 {
+		width: 100%;
+	}
+	
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		margin: 0;
+	}
+}
+
+
+.footer-widgets .wrap {
+	max-width: 1000px;
+}
+
+.footer-widgets .simple-social-icons ul li a, 
+.footer-widgets .simple-social-icons ul li a:hover {
+	    border-radius: 100px;
+      padding: 18px;
+      color: #000 !important;
+      font-size: 20px;
+      background-color: transparent !important;
+      color: rgb(216,9,9) !important;
+}
+
+
+
 /*.slick-list {
 	height: 1655px !important;
-}*/
+}
