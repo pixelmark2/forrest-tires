@@ -21,8 +21,6 @@ wp_enqueue_script( 'google-maps-marker', get_stylesheet_directory_uri() . '/incl
 wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/includes/slick.min.js', array('jquery') );
 wp_enqueue_script( 'slick-custom', get_stylesheet_directory_uri() . '/includes/slick-custom.js', array('slick', 'jquery') );
 
-//* Add Image Sizes
-add_image_size( 'featured-image', 720, 400, TRUE );
 
 //* Add featured image and title/subtext in the header
 add_action( 'genesis_entry_header', 'ft_entry_header' );
@@ -58,26 +56,27 @@ function ft_side_carousel() {
 		array(
 			'post_type' => 'location',
 			'posts_per_page' => -1,
+			'order' => 'ASC',
+			'orderby' => 'title'
 		)
 	);
 	$count = 0;
 	if ( $ft_query->have_posts() ) : ?>
 	
-		<div class="ft-carousel">
-
-		<p class="ft-carousel-title">Location</p>
-		<?php while ( $ft_query->have_posts()  ) : $ft_query->the_post(); ?>
-		
-			<div class="ft-carousel-item" data-count="<?php echo $count; ?>" id="<?php echo get_the_ID(); ?>" style="background: url('<?php echo get_field('featured_image')['sizes']['medium']; ?>') no-repeat scroll center/cover;">
-				<div class="ft-carousel-item-overlay">
-					<a href="<?php echo get_the_permalink(); ?>"><h3 class="ft-carousel-item-title"><?php the_title(); ?></h3></a>
+		<div class="ft-carousel-wrapper">
+			<p class="ft-carousel-title">Location</p>
+			<div class="ft-carousel">
+			<?php while ( $ft_query->have_posts()  ) : $ft_query->the_post(); ?>
+				
+				<div class="ft-carousel-item" data-count="<?php echo $count; ?>" id="<?php echo get_the_ID(); ?>" style="background: url('<?php echo get_field('featured_image')['sizes']['medium']; ?>') no-repeat scroll center/cover;">
+						<a href="<?php echo get_the_permalink(); ?>"><h3 class="ft-carousel-item-title"><?php the_title(); ?></h3></a>
 				</div>
+				
+			<?php $count++ ;?>
+			<?php endwhile; ?>
 			</div>
-		<?php $count++ ;?>
-		<?php endwhile; ?>
-		</div>
-		<?php wp_reset_postdata(); ?>
-
+			<?php wp_reset_postdata(); ?>
+			</div>
 	<?php endif;
 }
 

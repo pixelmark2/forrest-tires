@@ -13,6 +13,7 @@ function location_post_type() {
 				'all_items'=> __( 'All Locations' )
             ),
             'public' => true,
+			'has_archive' => true,
             'rewrite' => array( 'slug' => 'stores' ),
             'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes'/*, 'genesis-seo', 'genesis-cpt-archives-settings'*/ ),
         )

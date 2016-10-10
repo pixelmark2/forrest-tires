@@ -172,13 +172,13 @@ textarea:focus,
 
 a {
 	color: #c3251d;
-	text-decoration: underline;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
 a:hover,
 a:focus {
 	color: #333;
-	text-decoration: none;
 }
 
 p {
@@ -574,6 +574,10 @@ th:first-child {
 	max-width: 800px;
 }
 
+.ft-carousel-page .content {
+	padding: 20px 10%;
+}
+
 /* ## Column Widths and Positions
 --------------------------------------------- */
 
@@ -694,6 +698,13 @@ th:first-child {
 .first {
 	clear: both;
 	margin-left: 0;
+}
+
+/* ### FT Columns */
+.ft-one-third {
+	display: inline-block;
+	width: 28%;
+	margin-right: 3%;
 }
 
 
@@ -1015,8 +1026,7 @@ img.alignright,
 
 /* Display outline on focus */
 :focus {
-	color: #333;
-	outline: #ccc solid 1px;
+	outline: none;
 }
 
 
@@ -1607,29 +1617,135 @@ p.entry-meta {
 	width: calc(100% - 300px);
 }
 
-.ft-carousel-page .ft-carousel {
+.ft-carousel-page .ft-carousel-wrapper {
 	float: left;
 	width: 300px;
-	overflow: hidden;
+	position: relative;
+}
+
+.ft-carousel-page .ft-carousel-wrapper .ft-carousel-title {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: hsla(0, 92%, 44%, 1.0);
+	padding: 20px 0;
+	margin: 0;
+}
+
+.ft-carousel-page .ft-carousel {
+	min-height: 750px;
 }
 
 .ft-carousel-page .ft-carousel .ft-carousel-item {
 	height: 250px;
 	position: relative;
+	transition: all 0.3s;
 }
 
-.ft-carousel-page .ft-carousel .ft-carousel-item .ft-carousel-item-overlay {
+.ft-carousel-page .ft-carousel .ft-carousel-item a {
+	display: block;
 	height: 100%;
-	background-color: hsla(0, 92%, 44%, 0.6);
-	padding: 20px;
+	position: relative;
+}
+
+.ft-carousel-page .ft-carousel .ft-carousel-item a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: hsla(0, 92%, 44%, 0.5);
+	transition: all 0.3s;
 }
 
 .ft-carousel-page .ft-carousel .ft-carousel-item .ft-carousel-item-title {
 	color: #fff;
 	position: absolute;
 	bottom: 0;
-	
 }
+
+.ft-carousel-page .ft-carousel .ft-carousel-item:hover a:after {
+	background-color: hsla(0, 92%, 44%, 0.3);
+}
+
+.ft-carousel-page .ft-carousel .ft-carousel-item.ft-active a:after {
+	content: none;
+}
+
+.ft-carousel-page .ft-carousel-arrow {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: #fff;
+	padding: 5px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	z-index: 11;
+}
+
+.ft-carousel-page .ft-carousel-arrow span {
+	font-size: 36px;
+	width: auto;
+	height: auto;
+}
+
+.ft-carousel-page .ft-carousel-arrow.ft-arrow-up {
+	top: 20px;
+}
+
+.ft-carousel-page .ft-carousel-arrow.ft-arrow-down {
+	bottom: 20px;
+}
+
+/* -- Services carousel -- */
+.single-service.ft-carousel-page .ft-carousel,
+.post-type-archive-service.ft-carousel-page .ft-carousel {
+	background-color: #000;/*hsla(0, 92%, 44%, 0.3);*/
+}
+
+.single-service.ft-carousel-page .ft-carousel .ft-carousel-item a:after,
+.post-type-archive-service.ft-carousel-page .ft-carousel .ft-carousel-item a:after {
+	content: none;
+}
+
+.single-service.ft-carousel-page .ft-carousel .ft-carousel-item img,
+.post-type-archive-service.ft-carousel-page .ft-carousel .ft-carousel-item img {
+	height: 230px;
+    width: auto;
+    margin: 10px auto;
+}
+
+.single-service.ft-carousel-page .ft-carousel-arrow,
+.post-type-archive-service.ft-carousel-page .ft-carousel-arrow {
+	color: hsla(0, 92%, 44%, 1);
+	background-color: #fff;
+	padding: 8px;
+	border: 3px solid hsla(0, 92%, 44%, 1);
+}
+
+.single-service.ft-carousel-page .ft-carousel-arrow span,
+.post-type-archive-service.ft-carousel-page .ft-carousel-arrow span {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.single-service.ft-carousel-page .ft-carousel .ft-carousel-item:hover,
+.post-type-archive-service.ft-carousel-page .ft-carousel .ft-carousel-item:hover {
+	background-color: #444;
+}
+
+.single-service.ft-carousel-page .ft-carousel .ft-carousel-item.ft-active,
+.post-type-archive-service.ft-carousel-page .ft-carousel .ft-carousel-item.ft-active {
+	background-color: #888;
+}
+
+
 
 /* # Home Widgets
 --------------------------------------------- */
@@ -2222,7 +2338,7 @@ p.entry-meta {
 	}
 
 }
-.ft-carousel-page .ft-carousel .ft-carousel-item {
+/*.ft-carousel-page .ft-carousel .ft-carousel-item {
     height: 232px;
     position: relative;
 }
@@ -2236,7 +2352,7 @@ p.entry-meta {
 }
 .ft-carousel-item.slick-slide.slick-current.slick-active.slick-center .ft-carousel-item-overlay {
 	background-color: transparent;
-}
+}*/
 
 /*translate3d(0px, -3016px, 0px)
 -3016px - the height of a slide (232px)
@@ -2374,7 +2490,7 @@ translate3d(0px, -2784px, 0px)*/
 }
 
 
-.ft-carousel button.slick-prev.slick-arrow {
+/*.ft-carousel button.slick-prev.slick-arrow {
     position: relative;
     top: 0px;
     z-index: 20000;
@@ -2382,12 +2498,12 @@ translate3d(0px, -2784px, 0px)*/
 .ft-carousel button.slick-next.slick-arrow {
 	position: relative;
 	z-index: 20000;
-}
-.ft-carousel .slick-list.draggable {
+}*/
+/*.ft-carousel .slick-list.draggable {
     position: relative;
     top: -105px;
     margin-bottom: -137px;
-}
+}*/
 
 
 @media only screen and (max-width: 1023px) {
@@ -2403,7 +2519,7 @@ translate3d(0px, -2784px, 0px)*/
 		color: white !important;
 	}
 }
-p.ft-carousel-title {
+/*p.ft-carousel-title {
     z-index: 2000000;
     position: relative;
     top: -32px;
@@ -2412,9 +2528,9 @@ p.ft-carousel-title {
     font-weight: bold;
     color: white;
     background: linear-gradient(to bottom, rgba(216,9,9,1) 0%,rgba(109,0,25,0) 100%);
-}
+}*/
 
-.ft-carousel button.dashicons.slick-arrow {
+/*.ft-carousel button.dashicons.slick-arrow {
 	background-color: transparent;
 	left: 100px;
 	font-size: 37px;
@@ -2423,7 +2539,7 @@ p.ft-carousel-title {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 100px;
-}
+}/*
 
 .ft-carousel button.dashicons.dashicons-arrow-up-alt2.slick-prev.slick-arrow {
   top: 44px; 
@@ -2433,9 +2549,9 @@ p.ft-carousel-title {
   top: -44px; 
 }
 
-.ft-carousel .slick-list {
+/*.ft-carousel .slick-list {
     background: linear-gradient(hsla(0, 92%, 44%, 0.8), transparent 5%, transparent 95%, hsla(0, 92%, 44%, 0.8));
-}
+}*/
 
 
 header.entry-header {
