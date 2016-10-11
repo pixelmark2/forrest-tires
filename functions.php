@@ -110,6 +110,10 @@ if( file_exists( get_stylesheet_directory() . '/includes/location-custom-post.ph
 {
   require_once( get_stylesheet_directory() . '/includes/location-custom-post.php' );
 }
+if( file_exists( get_stylesheet_directory() . '/includes/service-custom-post.php' ) )
+{
+  require_once( get_stylesheet_directory() . '/includes/service-custom-post.php' );
+}
 
 if( file_exists( get_stylesheet_directory() . '/includes/tire-custom-post.php' ) )
 {
@@ -148,7 +152,7 @@ function ft_custom_header() {
 	echo '<h2 class="ft-header-text">Serving you for over 70 years</h2></div>';
 }
 
-//* Add logo and text to header
+//* Reguster google maps api key
 add_filter('acf/fields/google_map/api', 'tf_google_map_api');
 function tf_google_map_api( $api ){
 	
@@ -157,8 +161,6 @@ function tf_google_map_api( $api ){
 	return $api;
 	
 }
-
-
 
 genesis_register_sidebar( array(
 	'id'          => 'footer-one',
