@@ -2748,8 +2748,81 @@ header.entry-header {
       color: rgb(216,9,9) !important;
 }
 
+.ft-tire-page .ft-header {
+	background-color: rgb(216,9,9);
+	height: auto;
+}
+.ft-tire-page .ft-header h1 {
+	margin-bottom: 0;
+	color: white;
+	padding: 25px 0;
+}
+
+h2.secondary-tire-title {
+    padding-top: 30px;
+}
+
+.tire-featured-image {
+    height: 600px;
+}
+
+.ft-tire-page .entry-content .wrap {
+	max-width: 1400px;
+}
+
+.ft-tire-page .ft-section {
+	vertical-align: top;
+	text-align: left;
+}
+.ft-section.left-featured-image {
+		width: 50%;
+    display: inline-block;
+}
+
+.ft-section.tire-info {
+    width: 49%;
+    display: inline-block;
+}
 
 
+.ft-tire-page table th,
+.ft-tire-page table td {
+	width: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+.ft-tire-page table th {
+	font-weight: bold;
+	font-size: 14px;
+}
+.ft-tire-page .tire-text {
+	font-size: 14px;
+}
+
+.ft-tire-page thead {
+    background-color: rgb(51,51,51);
+    color: rgb(220,60,38);
+    font-weight: bolder;
+}
+
+.tire-text-header {
+	border-bottom: 3px solid rgb(216,9,9);
+}
+.tire-text-header h1 {
+	display: inline-block;
+}
+
+span.tire-category {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(142,142,142);
+    float: right;
+    word-spacing: 99999px;
+    line-height: 22px;
+    max-width: 98px;
+    position: relative;
+    top: -10px;
+}
 /*.slick-list {
 	height: 1655px !important;
 }
