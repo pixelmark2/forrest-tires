@@ -2569,17 +2569,7 @@ header.entry-header {
     top: -200px;
 }
 
-#home-1-right .widget {
-	margin-bottom: 0;
-}
 
-.featured-content .entry:last-of-type {
-    margin-bottom: -10px;
-}
-
-#home-1-right img.alignnone, .alignnone {
-    margin-bottom: 12px;
-}
 
 .home-widgets .widget-area {
     padding: 0;
@@ -2692,33 +2682,9 @@ header.entry-header {
 .home-widgets {
 	text-align: left;
 }
-/*CHANGE THE HEIGHT OF THE TUTORIALS CAROUSEL ON THE RIGHT*/
-.home-1-right .carousel-list .rimage.background-image,
-.home-1-right .carousel-list .card-image {
-    height: 271px !important;
-}
-.home-1-right .carousel-list .inner_overlay {
-	display: block;
-}
 
-.home-1-right .carousel-list .inside-title {
-	display: table;
-	height: 100%;
-}
-.home-1-right .carousel-list .inside-title .wrap {
-	display: table-cell;
-	vertical-align: middle;
-}
 
-/*CHANGE HEIGHT OF TESTIMONIAL SECTION ON THE FRONT PAGE SLIDER ON THE LEFT*/
-.home-1-left .card-item .inner_overlay {
-	height: 216.25px;
-}
 
-.home-1-left .carousel-list .rimage.background-image,
-.home-1-left .carousel-list .card-image {
-    height: 485px;
-}
 
 .home-2 .wrap {
 	max-width: 1400px;
@@ -2748,24 +2714,52 @@ header.entry-header {
 .register-bar .card-details {
 	background-color: rgb(216,9,9);
 }
+
+#home-1-right .widget {
+	margin-bottom: 0;
+}
+
+.featured-content .entry:last-of-type {
+    margin-bottom: -10px;
+}
+
+#home-1-right img.alignnone, .alignnone {
+    margin-bottom: 12px;
+}
+
+.home-1-left .carousel-list .rimage.background-image,
+.home-1-left .carousel-list .card-image {
+    height: 485px;
+}
+
+.home-1-right .d2l-fp-ad .rimage.background-image,
+.home-1-right .d2l-fp-ad .card-image {
+    height: 184.25px;
+}
+
 .home-1-right .d2l-fp-benefits .rimage.background-image,
 .home-1-right .d2l-fp-benefits .card-image {
-   height: 215.25px !important;
-}
-.d2l-fp-benefits .inner_overlay {
-	bottom: 0;
-	text-align: left !important;
+   height: 300.25px !important;
 }
 
 .home-1-left .full-carousel-cards .inner_overlay {
-	background-color: rgb(54,54,54);
+	background-color: rgba(54,54,54,.3);
 }
 
-.home-1-right .slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
+.home-1-left .carousel-list .inner_overlay {
+	display: block;
+	position: absolute;
 }
 
+.home-1-left .carousel-list .inside-title {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.home-1-left .carousel-list .inside-title .wrap {
+	display: table-cell;
+	vertical-align: middle;
+}
 .site-footer {
 	padding-bottom: 80px;
 	text-align: left;
@@ -2863,6 +2857,19 @@ header.entry-header {
       background-color: transparent !important;
       color: rgb(216,9,9) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .ft-tire-page .ft-section {
