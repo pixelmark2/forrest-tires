@@ -64,12 +64,12 @@ function ft_entry_content() { ?>
 					<h2 class="secondary-tire-title"><?php echo $secondary_tire_title = get_field( 'secondary_tire_title' ); ?></h2>
 					<p><?php echo $tire_description = get_field( 'tire_description' ); ?></p>
 				</div>
-				<table border="0">
+				<table border="0"  cellpadding=5>
 					<thead>
 						<tr>
 							<th>Tire Size</th>
-							<th>Rim Reccomended (Inches)</th>
-							<th>Cold Pressure Reccomended Range Bar (PSI)</th>
+							<th>Rim Recommended (Inches)</th>
+							<th>Cold Pressure Recommended Range Bar (PSI)</th>
 							<th>Hot Pressure Recommended Range Bar (PSI)</th>
 							<th>Warmer Usage C (F)</th>
 						</tr>

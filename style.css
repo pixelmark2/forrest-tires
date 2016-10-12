@@ -2864,6 +2864,10 @@ header.entry-header {
       color: rgb(216,9,9) !important;
 }
 
+
+.ft-tire-page .ft-section {
+	padding-top: 80px;
+}
 .ft-tire-page .ft-header {
 	background-color: rgb(216,9,9);
 	height: auto;
@@ -2872,10 +2876,37 @@ header.entry-header {
 	margin-bottom: 0;
 	color: white;
 	padding: 25px 0;
+	text-transform: uppercase;
+}
+.tire-featured-image {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
+
+.tire-text-header {
+	border-bottom: 3px solid rgb(216,9,9);
+	padding-bottom: 20px;
+}
+.tire-text-header h1 {
+	display: inline-block;
+	text-transform: uppercase;
+}
+span.tire-category {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(142,142,142);
+    float: right;
+    word-spacing: 99999px;
+    line-height: 22px;
+    max-width: 98px;
+    position: relative;
+    top: -10px;
+    text-transform: uppercase;
+}
 h2.secondary-tire-title {
     padding-top: 30px;
+    text-transform: uppercase;
 }
 
 .tire-featured-image {
@@ -2903,42 +2934,35 @@ h2.secondary-tire-title {
 
 .ft-tire-page table th,
 .ft-tire-page table td {
+	text-transform: uppercase;
 	width: 40px;
 	text-align: center;
 	font-size: 12px;
+	border: 2px solid rgb(223,223,223);
+	font-weight: bold;
 }
 .ft-tire-page table th {
-	font-weight: bold;
-	font-size: 14px;
+	font-size: 12px;
+	line-height: 18px;
 }
-.ft-tire-page .tire-text {
+/*.ft-tire-page .tire-text {
 	font-size: 14px;
-}
+}*/
 
 .ft-tire-page thead {
     background-color: rgb(51,51,51);
     color: rgb(220,60,38);
+    color: rgb(220,86,73);
     font-weight: bolder;
 }
 
-.tire-text-header {
-	border-bottom: 3px solid rgb(216,9,9);
-}
-.tire-text-header h1 {
-	display: inline-block;
+tr:nth-child(even) {
+    background-color: rgb(238,238,238);
 }
 
-span.tire-category {
-    font-size: 22px;
-    font-weight: bold;
-    color: rgb(142,142,142);
-    float: right;
-    word-spacing: 99999px;
-    line-height: 22px;
-    max-width: 98px;
-    position: relative;
-    top: -10px;
-}
+
+
+
 /*.slick-list {
 	height: 1655px !important;
 }
