@@ -115,6 +115,11 @@ if( file_exists( get_stylesheet_directory() . '/includes/service-custom-post.php
   require_once( get_stylesheet_directory() . '/includes/service-custom-post.php' );
 }
 
+if( file_exists( get_stylesheet_directory() . '/includes/tire-custom-post.php' ) )
+{
+  require_once( get_stylesheet_directory() . '/includes/tire-custom-post.php' );
+}
+
 //* Remove the header right widget area
 unregister_sidebar( 'header-right' );
 

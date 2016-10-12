@@ -2338,6 +2338,7 @@ p.entry-meta {
 	}
 
 }
+
 /*.ft-carousel-page .ft-carousel .ft-carousel-item {
     height: 232px;
     position: relative;
@@ -2692,6 +2693,7 @@ header.entry-header {
 .home-widgets {
 	text-align: left;
 }
+
 /*CHANGE THE HEIGHT OF THE TUTORIALS CAROUSEL ON THE RIGHT*/
 .home-1-right .carousel-list .rimage.background-image,
 .home-1-right .carousel-list .card-image {
@@ -2748,6 +2750,7 @@ header.entry-header {
 .register-bar .card-details {
 	background-color: rgb(216,9,9);
 }
+
 .home-1-right .d2l-fp-benefits .rimage.background-image,
 .home-1-right .d2l-fp-benefits .card-image {
    height: 215.25px !important;
@@ -2764,6 +2767,53 @@ header.entry-header {
 .home-1-right .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
+}
+
+
+#home-1-right .widget {
+	margin-bottom: 0;
+}
+
+.featured-content .entry:last-of-type {
+    margin-bottom: -10px;
+}
+
+#home-1-right img.alignnone, .alignnone {
+    margin-bottom: 12px;
+}
+
+.home-1-left .carousel-list .rimage.background-image,
+.home-1-left .carousel-list .card-image {
+    height: 485px;
+}
+
+.home-1-right .d2l-fp-ad .rimage.background-image,
+.home-1-right .d2l-fp-ad .card-image {
+    height: 184.25px;
+}
+
+.home-1-right .d2l-fp-benefits .rimage.background-image,
+.home-1-right .d2l-fp-benefits .card-image {
+   height: 300.25px !important;
+}
+
+.home-1-left .full-carousel-cards .inner_overlay {
+	background-color: rgba(54,54,54,.3);
+}
+
+.home-1-left .carousel-list .inner_overlay {
+	display: block;
+	position: absolute;
+}
+
+.home-1-left .carousel-list .inside-title {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.home-1-left .carousel-list .inside-title .wrap {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .site-footer {
@@ -2862,6 +2912,112 @@ header.entry-header {
       font-size: 20px;
       background-color: transparent !important;
       color: rgb(216,9,9) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ft-tire-page .ft-section {
+	padding-top: 80px;
+}
+.ft-tire-page .ft-header {
+	background-color: rgb(216,9,9);
+	height: auto;
+}
+.ft-tire-page .ft-header h1 {
+	margin-bottom: 0;
+	color: white;
+	padding: 25px 0;
+	text-transform: uppercase;
+}
+.tire-featured-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.tire-text-header {
+	border-bottom: 3px solid rgb(216,9,9);
+	padding-bottom: 20px;
+}
+.tire-text-header h1 {
+	display: inline-block;
+	text-transform: uppercase;
+}
+span.tire-category {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(142,142,142);
+    float: right;
+    word-spacing: 99999px;
+    line-height: 22px;
+    max-width: 98px;
+    position: relative;
+    top: -10px;
+    text-transform: uppercase;
+}
+h2.secondary-tire-title {
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.tire-featured-image {
+    height: 600px;
+}
+
+.ft-tire-page .entry-content .wrap {
+	max-width: 1400px;
+}
+
+.ft-tire-page .ft-section {
+	vertical-align: top;
+	text-align: left;
+}
+.ft-section.left-featured-image {
+		width: 50%;
+    display: inline-block;
+}
+
+.ft-section.tire-info {
+    width: 49%;
+    display: inline-block;
+}
+
+
+.ft-tire-page table th,
+.ft-tire-page table td {
+	text-transform: uppercase;
+	width: 40px;
+	text-align: center;
+	font-size: 12px;
+	border: 2px solid rgb(223,223,223);
+	font-weight: bold;
+}
+.ft-tire-page table th {
+	font-size: 12px;
+	line-height: 18px;
+}
+/*.ft-tire-page .tire-text {
+	font-size: 14px;
+}*/
+
+.ft-tire-page thead {
+    background-color: rgb(51,51,51);
+    color: rgb(220,60,38);
+    color: rgb(220,86,73);
+    font-weight: bolder;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(238,238,238);
 }
 
 

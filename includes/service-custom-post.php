@@ -44,5 +44,3 @@ function service_taxonomy() {
 	);
 	register_taxonomy( 'service_category', 'service', $args );
 }
-
-?>
