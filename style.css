@@ -2743,14 +2743,34 @@ header.entry-header {
     height: 485px;
 }
 
-.home-1-right .d2l-fp-ad .rimage.background-image,
-.home-1-right .d2l-fp-ad .card-image {
-    height: 184.25px;
+.home-1-right .rimage.background-image,
+.home-1-right .card-image {
+    height: 242.25px !important;
 }
 
-.home-1-right .d2l-fp-benefits .rimage.background-image,
-.home-1-right .d2l-fp-benefits .card-image {
-   height: 300.25px !important;
+
+.home-1-left .carousel-list:hover .slick-arrow {
+	opacity: 1;
+}
+
+.home-1-left .slick-arrow:hover {
+	color: rgba(255,255,255,1); !important;
+}
+.home-1-left .slick-arrow {
+	position: absolute;
+	font-size: 70px;
+  z-index: 10;
+  color: rgba(255,255,255,.7);
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.home-1-left .slick-arrow-left {
+	top: 43%;
+}
+.home-1-left .slick-arrow-right {
+    top: 43%;
+    right: 50px;
 }
 
 .home-1-left .full-carousel-cards .inner_overlay {
