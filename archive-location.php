@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 /** Remove the post info function */

@@ -1754,6 +1754,11 @@ p.entry-meta {
 	text-align: center;
 }
 
+.home-1 .widget-area .wrap,
+.home-3.widget-area .wrap {
+	max-width: 10000px !important;
+	padding: 0px;
+}
 .home-widgets .home-1 .widget-area {
 	
 }
@@ -1769,17 +1774,59 @@ p.entry-meta {
 .home-1-left {
 	background: #ddd;
 	display: inline-block;
-	width: 65%;
 	vertical-align: middle;
 }
 
+.home-1-right,
+.home-1-left {
+	width: 100%;
+}
+@media only screen and (min-width: 860px) and (max-width: 1023px) {
+	.home-1-right .widget {
+		width: 50%;
+		float: left;
+	}
+
+}
+
+@media only screen and (min-width: 860px) {
+	.home-2 .widget {
+		width: 33.33333%;
+	}
+	.home-2 .article,
+	.home-2 .widget-wrap,
+	.home-2 .widget {
+		float: left;
+	}
+
+	.register-bar .single-card.card-item .card-image {
+		width: 70%;
+		float: right;
+		position: relative !important;
+	}
+
+	.register-bar .single-card.card-item .card-details {
+		width: 30%;
+		float: left;
+	}
+
+	.register-bar .card-details {
+	    background-color: rgb(216,9,9) !important;
+	}
+}
+@media only screen and (min-width: 1023px) {
+	.home-1-right {
+		width: 35%;
+	}
+	.home-1-left {
+		width: 65%;
+	}
+}
 .home-1-right {
 	background: #eee;
 	display: inline-block;
-	width: 35%;
 	vertical-align: middle;
 }
-
 .home-2 {
 	background: #ccc;
 }
@@ -2622,11 +2669,7 @@ header.entry-header {
 	height: 245px;
 }
 
-.home-2 .article,
-.home-2 .widget-wrap,
-.home-2 .widget {
-	display: inline-block;
-}
+
 /*HIDE THE TITLE OF THE BRANDS SLIDER*/
 .home-2 .inner_overlay,
 .home-2 .carousel-list .slick-dots {
@@ -2645,8 +2688,10 @@ header.entry-header {
 .slick-slide {
 	outline: none !important;
 }
+
+
+
 .home-2 .widget {
-	width: 33%;
 	margin-bottom: 0px;
 	vertical-align: top;
 }
@@ -2661,20 +2706,19 @@ header.entry-header {
 	display: block;
 }
 
-.register-bar .single-card.card-item .card-image {
-	width: 70%;
-	float: right;
-}
+
 
 .register-bar .single-card.card-item .card-details {
-	width: 30%;
-	float: left;
 	height: 170px;
 }
-
 .register-bar .single-card.card-item .card-image,
 .register-bar .single-card.card-item .rimage {
 	height: 170px;
+	
+}
+
+.register-bar .single-card.card-item .card-image {
+	position: absolute;
 }
 .register-bar .card-details a {
 	display: table;
