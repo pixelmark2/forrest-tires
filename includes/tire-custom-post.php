@@ -13,6 +13,7 @@ function tire_post_type() {
 				'all_items'=> __( 'All Tires' )
             ),
             'public' => true,
+            'has_archive' => true,
             'rewrite' => array( 'slug' => 'tires' ),
             'supports' => array( 'title', 'thumbnail', 'page-attributes'/*, 'genesis-seo', 'genesis-cpt-archives-settings'*/ ),
         )
