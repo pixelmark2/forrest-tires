@@ -102,7 +102,8 @@ input[type="search"]{
 .site-header:before,
 .site-inner:before,
 .widget:before,
-.wrap:before {
+.wrap:before,
+.ft-menu-item:before {
 	content: " ";
 	display: table;
 }
@@ -120,7 +121,8 @@ input[type="search"]{
 .site-header:after,
 .site-inner:after,
 .widget:after,
-.wrap:after {
+.wrap:after,
+.ft-menu-item:after {
 	clear: both;
 	content: " ";
 	display: table;
@@ -2966,6 +2968,22 @@ header.entry-header {
 }
 
 
+@media only screen and (min-width: 1023px) {
+	.left-featured-image {
+	    width: 37% !important;
+	    display: inline-block;
+	    position: absolute;
+    margin-left: -39%;
+    margin-top: -13%;
+	}
+	.ft-section.tire-info {
+	    margin-left: 50%;
+	    width: 49%;
+	}
+
+}
+
+
 .tire-text-header {
 	border-bottom: 3px solid rgb(216,9,9);
 	padding-bottom: 20px;
@@ -3004,12 +3022,12 @@ h2.secondary-tire-title {
 	text-align: left;
 }
 .ft-section.left-featured-image {
-		width: 50%;
     display: inline-block;
+    width: 100%;
 }
 
 .ft-section.tire-info {
-    width: 49%;
+    
     display: inline-block;
 }
 
@@ -3046,7 +3064,87 @@ tr:nth-child(even) {
 
 
 
+.ft-carousel-page.post-type-archive-tire .content-sidebar-wrap {
+    max-width: 1200px;
+    margin: 50px auto;
+    float: none;
+    width: 100%;
+}
 
+.ft-carousel-page.post-type-archive-tire .ft-one-third {
+	width: 30.5%;
+}
+.ft-one-third:nth-child(3n+2) {  /* or 4n+1 */
+    margin-right: 0;   
+}
+.ft-carousel-page.post-type-archive-tire .content {
+	padding: 0 20px;
+}
+.ft-menu-wrapper {
+	float: left;
+	background-color: black;
+	width: 300px;
+}
+
+.single-tire .ft-carousel-arrow {
+	position: relative !important;
+	left: 38%;
+}
+.ft-menu-wrapper a {
+	color: white;
+}
+p.ft-menu-title {
+    color: white;
+    margin-bottom: 0;
+    padding: 27px 0px;
+    background-color: rgb(216,9,9);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ft-menu-wrapper {
+    padding: 0 20px;
+}
+
+.ft-menu img,
+.ft-menu a {
+	float: left;
+}
+.ft-menu img {
+	width: 30%;
+}
+
+.ft-menu a{
+width: 70%;
+
+	}
+
+	.ft-menu h3 {
+		padding-left: 10px;
+	}
+.ft-menu-item.current-ft-menu-item {
+    background: rgb(216,9,9);
+}
+
+.single-tire .ft-arrow-up span {
+	margin-bottom: 13px;
+}
+
+.single-tire .ft-arrow-down {
+	bottom: 50px;
+}
+.single-tire .ft-carousel-arrow.ft-arrow-down {
+	    bottom: 6px;
+}
+
+.single-tire .ft-carousel-arrow {
+	border: none;
+}
+
+.single-tire .ft-carousel-arrow.ft-arrow-up {
+	top: 5px;
+}
 /*This is the second change*/
 /*.slick-list {
 	height: 1655px !important;
