@@ -3082,7 +3082,6 @@ tr:nth-child(even) {
 }
 .ft-menu-wrapper {
 	float: left;
-	background-color: black;
 	width: 300px;
 }
 
@@ -3106,7 +3105,9 @@ p.ft-menu-title {
 .ft-menu-wrapper {
     padding: 0 20px;
 }
-
+.ft-menu {
+	padding-top: 20px;
+}
 .ft-menu img,
 .ft-menu a {
 	float: left;
@@ -3117,14 +3118,15 @@ p.ft-menu-title {
 
 .ft-menu a{
 width: 70%;
+color: #555;
 
 	}
 
 	.ft-menu h3 {
 		padding-left: 10px;
 	}
-.ft-menu-item.current-ft-menu-item {
-    background: rgb(216,9,9);
+.ft-menu-item.current-ft-menu-item a {
+    color: rgb(216,9,9);
 }
 
 .single-tire .ft-arrow-up span {

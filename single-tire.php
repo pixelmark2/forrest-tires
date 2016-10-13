@@ -64,7 +64,6 @@ function ft_side_carousel() {
 	if ( $ft_query->have_posts() ) : ?>
 		<div class="ft-menu-wrapper">
 			<p class="ft-menu-title">Location</p>
-			<a class="ft-carousel-arrow ft-arrow-up" href="<?php echo $prev_url; ?>"><span class="dashicons dashicons-arrow-up-alt2"></span></a>
 			<div class="ft-menu">
 			<?php while ( $ft_query->have_posts()  ) : $ft_query->the_post(); ?>
 				<?php $menu_item_id = get_the_ID(); ?>
@@ -78,7 +77,6 @@ function ft_side_carousel() {
 			<?php endwhile; ?>
 
 			</div>
-			<a class="ft-carousel-arrow ft-arrow-down" href="<?php echo $next_url; ?>"><span class="dashicons dashicons-arrow-down-alt2"></span></a>
 			<?php wp_reset_postdata(); ?>
 			</div>
 	<?php endif;
