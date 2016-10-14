@@ -53,7 +53,9 @@ function ft_archive_content() { ?>
 		while ( $ft_query2->have_posts()  ) : $ft_query2->the_post(); ?>
 		
 			<div class="ft-one-third">
-				<img src="<?php echo the_post_thumbnail_url(); ?>" />
+				<div class="tire-post-image" style='background-image: url("<?php echo the_post_thumbnail_url(); ?>")'>
+				
+				</div>
 				<a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 			</div>
 			
