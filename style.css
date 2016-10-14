@@ -1534,6 +1534,7 @@ p.entry-meta {
 .entry-header .ft-header-text-container .ft-header-title {
 	text-transform: uppercase;
 	font-size: 30px;
+	float: left;
 }
 
 .entry-header .ft-header-text-container .ft-header-text {
@@ -2942,16 +2943,17 @@ header.entry-header {
 
 
 
-
-
-
-
-
-
-
-.ft-tire-page .ft-section {
-	padding-top: 80px;
+.tire-post-image {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 33.4% 0;
 }
+
+
+
+
+
 .ft-tire-page .ft-header {
 	background-color: rgb(216,9,9);
 	height: auto;
@@ -2961,28 +2963,65 @@ header.entry-header {
 	color: white;
 	padding: 25px 0;
 	text-transform: uppercase;
+	float: left;
 }
-.tire-featured-image {
-    background-size: contain;
-    background-repeat: no-repeat;
+
+.tire-featured-image img {
+	width: 100%;
 }
 
 
+.single-tire .entry-content .ft-section {
+	padding: 0px;
+	padding-top: 40px;
+}
+@media only screen and (max-width: 1023px) {
+	.ft-tire-page .entry-content .wrap {
+		padding: 0 20px;
+	}
+}
 @media only screen and (min-width: 1023px) {
 	.left-featured-image {
-	    width: 37% !important;
-	    display: inline-block;
-	    position: absolute;
-    margin-left: -39%;
-    margin-top: -13%;
+    width: 50% !important;
+    display: inline-block;
+    position: absolute;
+    margin-left: -50%;
+    top: 427px;
 	}
 	.ft-section.tire-info {
 	    margin-left: 50%;
 	    width: 49%;
 	}
+	.single-tire .entry-content .ft-section {
+		padding: 40px;
+	}
 
+	.single-tire .entry-content .ft-section {
+		padding-top: 80px;
+	}
+}
+@media only screen and (min-width: 1340px) {
+	.left-featured-image {
+		top: 370px;
+	}
+
+	span.tire-category {
+	    float: right;
+	    word-spacing: 99999px;
+	    line-height: 22px;
+	    max-width: 98px;
+	    position: relative;
+	    top: -10px;
+	}
 }
 
+	span.tire-category {
+	    font-size: 22px;
+	    font-weight: bold;
+	    color: rgb(142,142,142);
+	    text-transform: uppercase;
+	    display: block;
+	}
 
 .tire-text-header {
 	border-bottom: 3px solid rgb(216,9,9);
@@ -2992,25 +3031,10 @@ header.entry-header {
 	display: inline-block;
 	text-transform: uppercase;
 }
-span.tire-category {
-    font-size: 22px;
-    font-weight: bold;
-    color: rgb(142,142,142);
-    float: right;
-    word-spacing: 99999px;
-    line-height: 22px;
-    max-width: 98px;
-    position: relative;
-    top: -10px;
-    text-transform: uppercase;
-}
+
 h2.secondary-tire-title {
     padding-top: 30px;
     text-transform: uppercase;
-}
-
-.tire-featured-image {
-    height: 600px;
 }
 
 .ft-tire-page .entry-content .wrap {
@@ -3025,6 +3049,8 @@ h2.secondary-tire-title {
     display: inline-block;
     width: 100%;
 }
+
+
 
 .ft-section.tire-info {
     
@@ -3080,31 +3106,107 @@ tr:nth-child(even) {
 .ft-carousel-page.post-type-archive-tire .content {
 	padding: 0 20px;
 }
-.ft-menu-wrapper {
-	float: left;
-	width: 300px;
+
+.ft-menu-wrapper:hover > .ft-menu {
+	display: block;
 }
+.ft-menu-wrapper {
+    width: 300px;
+    position: relative;
+    /*height: 0px;*/
+    float: right;
+    /* margin-top: 29px; */
+    /* right: 0; */
+    /*top: -64px;*/
+    z-index: 10;
+    top: 35px;
+}
+.ft-menu-wrapper a {
+	color: white;
+}
+.tire-menu-post-image {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 75px;
+	height: 60px;
+	float: right;
+	margin-right: 10px;
+}
+
+.ft-menu-wrapper .dashicons-arrow-down-alt2,
+.ft-menu-wrapper p {
+	color: rgb(142,142,142);
+}
+.ft-menu-wrapper p,
+.ft-menu h3 {
+	margin-bottom: 0;
+}
+
+.ft-menu-title:hover,
+.ft-menu-title:focus {
+	cursor: pointer;
+	background-color: #333;
+}
+button.ft-menu-title.dashicons-before.dashicons-menu::before {
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.ft-menu-title {
+/*		;
+   
+    z-index: 100000;
+    text-align: center;
+    color: white;
+    font-weight: bold;*/
+    /*width: 100px;*/
+    background-color: black;
+     position: relative;
+     right: -189px;
+    /*top: -12px;*/
+    /*right: -180px;*/
+/*    border: 2px solid white;
+    border-radius: 5px;*/
+    /*height: 58px;*/
+    /* float: right; */
+}
+.ft-menu {
+	background-color: rgb(216,9,9);
+	display: none;
+	width: 300px;
+	position: absolute;
+	/*float: right;*/
+}
+
+.ft-menu h3 {
+	padding-left: 10px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.ft-menu-item:hover {
+	    background-color: rgb(249,31,30);
+}
+.ft-menu-item.current-ft-menu-item {
+/*    border-top: 1px solid white;
+    border-bottom: 1px solid white;*/
+    
+}
+
+.ft-menu-item.current-ft-menu-item h3 {
+    color: #bbb;
+    border-left: 5px solid #bbb;
+}
+
 
 .single-tire .ft-carousel-arrow {
 	position: relative !important;
 	left: 38%;
 }
-.ft-menu-wrapper a {
-	color: white;
-}
-p.ft-menu-title {
-    color: white;
-    margin-bottom: 0;
-    padding: 27px 0px;
-    background-color: rgb(216,9,9);
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-}
 
-.ft-menu-wrapper {
-    padding: 0 20px;
-}
+
 .ft-menu {
 	padding-top: 20px;
 }
@@ -3116,18 +3218,16 @@ p.ft-menu-title {
 	width: 30%;
 }
 
-.ft-menu a{
+.ft-menu h3{
 width: 70%;
-color: #555;
+float: left;
 
 	}
-
-	.ft-menu h3 {
-		padding-left: 10px;
-	}
-.ft-menu-item.current-ft-menu-item a {
-    color: rgb(216,9,9);
+.ft-menu a {
+	width: 100%;
 }
+
+
 
 .single-tire .ft-arrow-up span {
 	margin-bottom: 13px;

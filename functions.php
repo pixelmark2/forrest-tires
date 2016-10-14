@@ -239,3 +239,11 @@ genesis_register_sidebar( array(
 
 
 add_filter('widget_text', 'do_shortcode');
+
+function build_js() {
+	if (is_single() && get_post_type()=='tire') {
+
+		wp_enqueue_script( 'd2l-custom-menu', get_stylesheet_directory_uri() . '/includes/custom-menu.js', false, NULL, 'all' );
+	}	
+}
+add_action('wp_enqueue_scripts', 'build_js');
