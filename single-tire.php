@@ -47,7 +47,7 @@ function ft_body_class( $classes ) {
 }
 
 
-// add_action( 'genesis_entry_header', 'ft_side_carousel' );
+add_action( 'genesis_entry_header', 'ft_side_carousel' );
 function ft_side_carousel() {
 	
 	$ft_query = new WP_Query(

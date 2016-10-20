@@ -1762,6 +1762,11 @@ p.entry-meta {
 	max-width: 10000px !important;
 	padding: 0px;
 }
+
+/*.home-1 .home-1-right .wrap {
+	max-width: 600px !important;
+	padding: 30px 0;
+}*/
 .home-widgets .home-1 .widget-area {
 	
 }
@@ -1792,31 +1797,7 @@ p.entry-meta {
 
 }
 
-@media only screen and (min-width: 860px) {
-	.home-2 .widget {
-		width: 33.33333%;
-	}
-	.home-2 .article,
-	.home-2 .widget-wrap,
-	.home-2 .widget {
-		float: left;
-	}
 
-	.register-bar .single-card.card-item .card-image {
-		width: 70%;
-		float: right;
-		position: relative !important;
-	}
-
-	.register-bar .single-card.card-item .card-details {
-		width: 30%;
-		float: left;
-	}
-
-	.register-bar .card-details {
-	    background-color: rgb(216,9,9) !important;
-	}
-}
 @media only screen and (min-width: 1023px) {
 	.home-1-right {
 		width: 35%;
@@ -2656,6 +2637,10 @@ header.entry-header {
 	padding: 15px 24px !important;
 }
 
+.social-bar .simple-social-icons ul li a:hover {
+	background-color: rgb(215,16,22) !important;
+}
+
 .social-bar .simple-social-icons ul li a, 
 .social-bar .simple-social-icons ul li a:hover {
 	    border-radius: 100px;
@@ -2705,44 +2690,26 @@ header.entry-header {
 	width: 100%;
 }
 /*$P$BJYKl01xyJyW4t7Ej1u.yh1YDRG3jD.*/
-.register-bar .single-card.card-item {
-	display: block;
-}
 
-
-
-.register-bar .single-card.card-item .card-details {
-	height: 170px;
-}
-.register-bar .single-card.card-item .card-image,
-.register-bar .single-card.card-item .rimage {
-	height: 170px;
-	
-}
-
-.register-bar .single-card.card-item .card-image {
-	position: absolute;
-}
-.register-bar .card-details a {
-	display: table;
-	height: 100%;
-	width: 100%;
-}
-
-.register-bar .card-details a .title {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
 .home-3 .wrap {
 	max-width: 10000px;
 }
-.home-widgets {
-	text-align: left;
+
+@media only screen and (min-width: 860px) {
+	.home-2 .widget {
+		width: 33.33333%;
+	}
+	.home-2 .article,
+	.home-2 .widget-wrap,
+	.home-2 .widget {
+		float: left;
+	}
 }
 
 
-
+.home-widgets {
+	text-align: left;
+}
 
 .home-2 .wrap {
 	max-width: 1400px;
@@ -2758,20 +2725,7 @@ header.entry-header {
 	text-decoration: none;
 }
 
-.register-bar h3 {
-	color: white;
-	font-size: 50px;
-	text-align: left !important;
-	text-transform: uppercase;
-}
-.register-bar a {
-	text-decoration: none;
-}
 
-
-.register-bar .card-details {
-	background-color: rgb(216,9,9);
-}
 
 #home-1-right .widget {
 	margin-bottom: 0;
@@ -2790,10 +2744,6 @@ header.entry-header {
     height: 485px;
 }
 
-.home-1-right .rimage.background-image,
-.home-1-right .card-image {
-    height: 242.25px !important;
-}
 
 
 .home-1-left .carousel-list:hover .slick-arrow {
@@ -2825,7 +2775,7 @@ header.entry-header {
 }
 
 .home-1-left .carousel-list .inner_overlay {
-	display: block;
+	display: none;
 	position: absolute;
 }
 
@@ -3250,4 +3200,8 @@ float: left;
 /*This is the second change*/
 /*.slick-list {
 	height: 1655px !important;
+}*/
+
+.page-id-7 .site-inner {
+	padding: 0 !important;
 }
