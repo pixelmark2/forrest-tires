@@ -47,52 +47,7 @@ function ft_body_class( $classes ) {
 }
 
 
-add_action( 'genesis_entry_header', 'ft_side_carousel' );
-function ft_side_carousel() {
-	
-	$ft_query = new WP_Query(
-		array(
-			'post_type' => 'tire',
-			'posts_per_page' => -1,
-			'order' => 'ASC',
-			'orderby' => 'title'
-		)
-	);
-	$count = 0;
-	$prev_post = get_previous_post();
-	$prev_url = $prev_post->guid;
 
-	$next_post = get_next_post();
-	$next_url = $next_post->guid;
-
-	$current_post_id = get_the_ID();
-	if ( $ft_query->have_posts() ) : ?>
-		<div class="ft-menu-wrapper">
-			<button class="ft-menu-title dashicons-before dashicons-menu">Tires</button>
-
-			<div class="ft-menu">
-			<?php while ( $ft_query->have_posts()  ) : $ft_query->the_post(); ?>
-				<?php $menu_item_id = get_the_ID(); ?>
-				<div class="ft-menu-item <?php if ($current_post_id == $menu_item_id) {echo 'current-ft-menu-item';}; ?>" data-count="<?php echo $count; ?>">
-				<a href="<?php echo get_the_permalink(); ?>">
-				<h3 class="ft-menu-item-title"><?php the_title(); ?></h3>
-					<div class="tire-menu-post-image" style='background-image: url("<?php echo the_post_thumbnail_url(); ?>")'>
-					
-					</div>
-						</a>
-
-				</div>
-				
-			<?php $count++ ;?>
-			<?php endwhile; ?>
-
-			</div>
-			<?php wp_reset_postdata(); ?>
-			</div>
-			</div>
-		</div>
-	<?php endif;
-}
 
 
 

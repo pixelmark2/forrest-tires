@@ -1620,6 +1620,7 @@ img.alignright,
 }
 
 
+
 /* ## Footer Navigation
 --------------------------------------------- */
 
@@ -2628,6 +2629,17 @@ p.entry-meta {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    
+    .site-header .ft-header-logo img {
+        height: 35px;
+    }
+    
+    .site-header .ft-header-text {
+        font-size: 24px;
+    }
+    
+}
 
 /*.ft-carousel-page .ft-carousel .ft-carousel-item {
     height: 232px;
@@ -2855,6 +2867,7 @@ header.entry-header {
 .social-bar .widget {
     margin-bottom: 0;
 }
+
 
 .social-bar .alignleft {
     float: none !important;
@@ -3477,6 +3490,22 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
 .single-tire .ft-carousel-arrow.ft-arrow-up {
     top: 5px;
 }
+
+
+/*This is the second change*/
+
+
+
+.tire-menu-post-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75px;
+    height: 60px;
+    float: right;
+    margin-right: 10px;
+}
+
 
 
 /*This is the second change*/
