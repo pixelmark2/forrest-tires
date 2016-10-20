@@ -18,54 +18,31 @@ remove_action( 'genesis_after_entry', 'genesis_get_comments_template' );
 //* Remove loop
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
-//* Add left side post carousel
-wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/includes/slick.min.js', array('jquery') );
-wp_enqueue_script( 'slick-custom', get_stylesheet_directory_uri() . '/includes/slick-custom.js', array('slick', 'jquery') );
+//* Add left side image
+wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/includes/side-image-height.js', array('jquery') );
+
 add_filter( 'body_class', 'ft_body_class' );
 function ft_body_class( $classes ) {
 	
-	$classes[] = 'ft-carousel-page';
+	$classes[] = 'ft-left-image-page';
 	return $classes;
 	
 }
-add_action( 'genesis_before_content_sidebar_wrap', 'ft_side_carousel' );
-function ft_side_carousel() {
-	
-	$ft_query = new WP_Query(
-		array(
-			'post_type' => 'location',
-			'posts_per_page' => -1,
-			'order' => 'ASC',
-			'orderby' => 'title'
-		)
-	);
-	$count = 0;
-	if ( $ft_query->have_posts() ) : ?>
-	
-		<div class="ft-carousel-wrapper">
-			<p class="ft-carousel-title">Location</p>
-			<div class="ft-carousel">
-			<?php while ( $ft_query->have_posts()  ) : $ft_query->the_post(); ?>
-				
-				<div class="ft-carousel-item" data-count="<?php echo $count; ?>" id="<?php echo get_the_ID(); ?>" style="background: url('<?php echo get_field('featured_image')['sizes']['medium']; ?>') no-repeat scroll center/cover;">
-						<a href="<?php echo get_the_permalink(); ?>"><h3 class="ft-carousel-item-title"><?php the_title(); ?></h3></a>
-				</div>
-				
-			<?php $count++ ;?>
-			<?php endwhile; ?>
-			</div>
-			<?php wp_reset_postdata(); ?>
-			</div>
-	<?php endif;
-}
+add_action( 'genesis_before_content_sidebar_wrap', 'ft_side_image' );
+function ft_side_image() { ?>
+    <div class="ft-left-image" style="background: url('<?php echo get_stylesheet_directory_uri() ?>/images/ft-side.jpg') no-repeat scroll center/cover;"></div>
+    <?php }
 
 //* Add archive content
 add_action( 'genesis_loop', 'ft_archive_content' );
 function ft_archive_content() { ?>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta vel mauris et fringilla. Quisque at lectus molestie, suscipit nunc a, tristique metus. Fusce maximus risus diam. Cras ut ullamcorper augue. Vestibulum laoreet consequat eros ac viverra. Phasellus non venenatis lorem, a ullamcorper mauris. Donec mi justo, viverra non euismod interdum, varius nec lorem. Etiam urna ipsum, tempus sodales porttitor sed, vehicula id dolor. Aenean convallis tincidunt consequat. Donec vitae euismod justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin fringilla ex sit amet metus lobortis, ut auctor sapien hendrerit.</p>
-	<h2>New Mexico</h2>
-	<?php $ft_query2 = new WP_Query(
+        <h1 class="ft-archive-title">Locations</h1>
+
+        <div class="wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta vel mauris et fringilla. Quisque at lectus molestie, suscipit nunc a, tristique metus. Fusce maximus risus diam. Cras ut ullamcorper augue. Vestibulum laoreet consequat eros ac viverra. Phasellus non venenatis lorem, a ullamcorper mauris. Donec mi justo, viverra non euismod interdum, varius nec lorem. Etiam urna ipsum, tempus sodales porttitor sed, vehicula id dolor. Aenean convallis tincidunt consequat. Donec vitae euismod justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin fringilla ex sit amet metus lobortis, ut auctor sapien hendrerit.</p>
+            
+            <?php $ft_query2 = new WP_Query(
 		array(
 			'post_type' => 'location',
 			'posts_per_page' => -1,
@@ -81,20 +58,36 @@ function ft_archive_content() { ?>
 		)
 	); 
 	
-	if ( $ft_query2->have_posts() ) :
-		
-		while ( $ft_query2->have_posts()  ) : $ft_query2->the_post(); ?>
-		
-			<div class="ft-one-third">
-				<img src="<?php echo get_field('featured_image')['sizes']['large']; ?>" />
-				<a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-			</div>
-			
-		<?php endwhile; ?>
-		<?php wp_reset_postdata(); ?>
-		
-	<?php endif; ?>
-	<h2>Texas<h2>
+    $n = 0;
+    $c = 1;
+    $u = $ft_query2->post_count;
+    
+	if ( $ft_query2->have_posts() ) : ?>
+		<div class="ft-archive-block">
+        <h2 class="ft-archive-subtitle">New Mexico</h2>
+		<?php while ( $ft_query2->have_posts()  ) : $ft_query2->the_post(); ?>
+            <?php if ( $c == 3*$n+1 ) : ?>
+            <div class="ft-row">
+            <div class="one-third first">
+            <?php $n++; ?>
+            <?php else: ?>
+            <div class="one-third">
+            <?php endif ?>
+                <a href="<?php echo get_the_permalink(); ?>">
+                <img src="<?php echo get_field('featured_image')['sizes']['large']; ?>" />
+                <h3><?php the_title(); ?></h3></a>
+            </div>
+        
+        <?php if ( $c == 3*$n || $c == $u ) : ?>
+            </div>
+        <?php endif ?>
+            <?php $c++; ?>
+        <?php endwhile; ?>
+        </div>
+        <div class="clearfix"></div>
+            <?php wp_reset_postdata(); ?>
+    <?php endif; ?>
+    
 	<?php $ft_query3 = new WP_Query(
 		array(
 			'post_type' => 'location',
@@ -109,21 +102,40 @@ function ft_archive_content() { ?>
 				),
 			),
 		)
-	); 
+	);
+                               
+    $n = 0;
+    $c = 1;                              
+    $u = $ft_query3->post_count;
 	
-	if ( $ft_query3->have_posts() ) :
-		
-		while ( $ft_query3->have_posts()  ) : $ft_query3->the_post(); ?>
-		
-			<div class="ft-one-third">
-				<img src="<?php echo get_field('featured_image')['sizes']['large']; ?>" />
-				<a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+	if ( $ft_query3->have_posts() ) : ?>
+        <div class="ft-archive-block">
+        <h2 class="ft-archive-subtitle">Texas</h2>
+		<?php while ( $ft_query3->have_posts()  ) : $ft_query3->the_post(); ?>
+			<?php if ( $c == 3*$n+1 ) : ?>
+            <div class="ft-row">
+            <div class="one-third first">
+            <?php $n++; ?>
+            <?php else: ?>
+            <div class="one-third">
+            <?php endif ?>
+                <a href="<?php echo get_the_permalink(); ?>">
+                    <img src="<?php echo get_field('featured_image')['sizes']['large']; ?>" />
+                    <h3><?php the_title(); ?></h3>
+                </a>
 			</div>
-			
+            
+			<?php if ( $c == 3*$n || $c == $u ) : ?>
+            </div>
+            <?php endif ?>
+                <?php $c++; ?>
 		<?php endwhile; ?>
+        </div>
+            <div class="clearfix"></div>
 		<?php wp_reset_postdata(); ?>
 		
-	<?php endif;
-}
+	<?php endif; ?>
+    </div>
+<?php }
 
 genesis();

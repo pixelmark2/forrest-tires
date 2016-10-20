@@ -105,6 +105,9 @@ function genesis_sample_comments_gravatar( $args ) {
 
 /* -- Custom Forrest Tire code -- */
 
+//* Enqueue scripts
+wp_enqueue_script( 'sticky-menu', get_stylesheet_directory_uri() . '/includes/sticky.js', array('jquery') );
+
 /* -- Include custom post types files -- */
 if( file_exists( get_stylesheet_directory() . '/includes/location-custom-post.php' ) )
 {

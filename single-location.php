@@ -18,8 +18,6 @@ remove_action( 'genesis_after_entry', 'genesis_get_comments_template' );
 //* Enqueue scripts
 wp_enqueue_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBz06oMoasKKpneJIUzv2hR1c0mqByO_k4' );
 wp_enqueue_script( 'google-maps-marker', get_stylesheet_directory_uri() . '/includes/google-map.js', array('google-maps', 'jquery') );
-wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/includes/slick.min.js', array('jquery') );
-wp_enqueue_script( 'slick-custom', get_stylesheet_directory_uri() . '/includes/slick-custom.js', array('slick', 'jquery') );
 
 
 //* Add featured image and title/subtext in the header
@@ -40,45 +38,30 @@ function ft_entry_header() { ?>
 <?php
 }
 
-//* Add left side post carousel
+//* Add content class
+add_filter( 'genesis_attr_content', 'ft_content_class' );
+function ft_content_class( $attributes ) {
+	
+	$attributes['class'] .= ' ft-fullwidth-content';
+	return $attributes;
+	
+}
+
+//* Add left side image
+wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/includes/side-image-height.js', array('jquery') );
+
 add_filter( 'body_class', 'ft_body_class' );
 function ft_body_class( $classes ) {
 	
-	$classes[] = 'ft-carousel-page';
+	$classes[] = 'ft-left-image-page';
 	return $classes;
 	
 }
 
-add_action( 'genesis_before_content_sidebar_wrap', 'ft_side_carousel' );
-function ft_side_carousel() {
-	
-	$ft_query = new WP_Query(
-		array(
-			'post_type' => 'location',
-			'posts_per_page' => -1,
-			'order' => 'ASC',
-			'orderby' => 'title'
-		)
-	);
-	$count = 0;
-	if ( $ft_query->have_posts() ) : ?>
-	
-		<div class="ft-carousel-wrapper">
-			<p class="ft-carousel-title">Location</p>
-			<div class="ft-carousel">
-			<?php while ( $ft_query->have_posts()  ) : $ft_query->the_post(); ?>
-				
-				<div class="ft-carousel-item" data-count="<?php echo $count; ?>" id="<?php echo get_the_ID(); ?>" style="background: url('<?php echo get_field('featured_image')['sizes']['medium']; ?>') no-repeat scroll center/cover;">
-						<a href="<?php echo get_the_permalink(); ?>"><h3 class="ft-carousel-item-title"><?php the_title(); ?></h3></a>
-				</div>
-				
-			<?php $count++ ;?>
-			<?php endwhile; ?>
-			</div>
-			<?php wp_reset_postdata(); ?>
-			</div>
-	<?php endif;
-}
+add_action( 'genesis_before_content_sidebar_wrap', 'ft_side_image' );
+function ft_side_image() { ?>
+	<div class="ft-left-image" style="background: url('<?php echo get_stylesheet_directory_uri() ?>/images/ft-side.jpg') no-repeat scroll center/cover;"></div>
+<?php }
 
 //* Add entry content
 add_action( 'genesis_entry_content', 'ft_entry_content' );
