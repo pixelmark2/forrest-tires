@@ -1995,8 +1995,21 @@ p.entry-meta {
 
 .home-1 .widget-area .wrap,
 .home-3.widget-area .wrap {
+<<<<<<< HEAD
     max-width: 10000px !important;
     padding: 0px;
+=======
+	max-width: 10000px !important;
+	padding: 0px;
+}
+
+/*.home-1 .home-1-right .wrap {
+	max-width: 600px !important;
+	padding: 30px 0;
+}*/
+.home-widgets .home-1 .widget-area {
+	
+>>>>>>> 1fac50224216c2ffccc18d4deaf5126f9ffa9d14
 }
 
 .home-widgets .home-1 .widget-area {}
@@ -2027,6 +2040,7 @@ p.entry-meta {
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 860px) {
     .home-2 .widget {
         width: 33.33333%;
@@ -2049,6 +2063,8 @@ p.entry-meta {
         background-color: rgb(216, 9, 9) !important;
     }
 }
+=======
+>>>>>>> 1fac50224216c2ffccc18d4deaf5126f9ffa9d14
 
 @media only screen and (min-width: 1023px) {
     .home-1-right {
@@ -2861,6 +2877,11 @@ header.entry-header {
 
 .social-bar .simple-social-icons ul li a,
 .social-bar .simple-social-icons ul li a:hover {
+	background-color: rgb(215,16,22) !important;
+}
+
+.social-bar .simple-social-icons ul li a, 
+.social-bar .simple-social-icons ul li a:hover {
     border-radius: 100px;
     padding: 18px;
     color: #000 !important;
@@ -2942,9 +2963,18 @@ header.entry-header {
     text-align: center;
 }
 
-.home-3 .wrap {
-    max-width: 10000px;
+
+@media only screen and (min-width: 860px) {
+	.home-2 .widget {
+		width: 33.33333%;
+	}
+	.home-2 .article,
+	.home-2 .widget-wrap,
+	.home-2 .widget {
+		float: left;
+	}
 }
+
 
 .home-widgets {
     text-align: left;
@@ -2999,10 +3029,6 @@ header.entry-header {
     height: 485px;
 }
 
-.home-1-right .rimage.background-image,
-.home-1-right .card-image {
-    height: 242.25px !important;
-}
 
 .home-1-left .carousel-list:hover .slick-arrow {
     opacity: 1;
@@ -3035,10 +3061,7 @@ header.entry-header {
     background-color: rgba(54, 54, 54, .3);
 }
 
-.home-1-left .carousel-list .inner_overlay {
-    display: block;
-    position: absolute;
-}
+
 
 .home-1-left .carousel-list .inside-title {
     display: table;
@@ -3469,4 +3492,8 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
 
 /*.slick-list {
 	height: 1655px !important;
+}*/
+
+.page-id-7 .site-inner {
+	padding: 0 !important;
 }
