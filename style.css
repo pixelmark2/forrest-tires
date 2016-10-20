@@ -1995,10 +1995,7 @@ p.entry-meta {
 
 .home-1 .widget-area .wrap,
 .home-3.widget-area .wrap {
-<<<<<<< HEAD
-    max-width: 10000px !important;
-    padding: 0px;
-=======
+
 	max-width: 10000px !important;
 	padding: 0px;
 }
@@ -2009,7 +2006,6 @@ p.entry-meta {
 }*/
 .home-widgets .home-1 .widget-area {
 	
->>>>>>> 1fac50224216c2ffccc18d4deaf5126f9ffa9d14
 }
 
 .home-widgets .home-1 .widget-area {}
@@ -2040,7 +2036,6 @@ p.entry-meta {
     }
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 860px) {
     .home-2 .widget {
         width: 33.33333%;
@@ -2063,8 +2058,6 @@ p.entry-meta {
         background-color: rgb(216, 9, 9) !important;
     }
 }
-=======
->>>>>>> 1fac50224216c2ffccc18d4deaf5126f9ffa9d14
 
 @media only screen and (min-width: 1023px) {
     .home-1-right {
@@ -2875,7 +2868,6 @@ header.entry-header {
     padding: 15px 24px !important;
 }
 
-.social-bar .simple-social-icons ul li a,
 .social-bar .simple-social-icons ul li a:hover {
 	background-color: rgb(215,16,22) !important;
 }
