@@ -9,7 +9,7 @@
  * @license GPL-2.0+
  * @link    http://www.studiopress.com/
  */
-
+remove_filter('the_content', 'wpautop');
 //* Add landing page body class to the head
 add_filter( 'body_class', 'genesis_sample_add_body_class' );
 function genesis_sample_add_body_class( $classes ) {
@@ -19,6 +19,12 @@ function genesis_sample_add_body_class( $classes ) {
 	return $classes;
 
 }
+remove_action( 'genesis_footer', 'ft_custom_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+
+
 //* Remove the entry header markup (requires HTML5 theme support)
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );

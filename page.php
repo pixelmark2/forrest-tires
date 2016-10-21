@@ -50,11 +50,10 @@ get_footer();
 	<div class="tire-landing-logo">
 		<img class="alignnone size-medium wp-image-222" src="/wp-content/uploads/2016/10/Promise-Plan-Logo-Digital-300x255.png" alt="promise-plan-logo-digital" width="300" height="255" />
 
-		YOUR SATISFACTION — OUR PROMISE
-
-		• 30-Day Satisfaction Guarantee1
-		• 3-Year Flat Tire Changing Assistance2
-		• Limited Mileage Warranty3
+		<h3>YOUR SATISFACTION — OUR PROMISE</h3>
+		<p>30-Day Satisfaction Guarantee1</p>
+		<p>3-Year Flat Tire Changing Assistance</p>
+		<p>Limited Mileage Warranty</p>
 	</div>
 
 	<div class="tire-landing-desc">
@@ -97,45 +96,47 @@ get_footer();
 <div class="featured-tires">
 	<h2>FEATURED TIRES</h2>
 	<div class="tire-row">
-		<div class="ft-one-third">
+		<div class="ft-tire-row-image">
 			<img class="alignnone size-medium wp-image-223" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Untitled-1-300x300.png" alt="untitled-1" width="300" height="300" />
 		</div>
 
-		<div class="ft-one-third">
+		<div class="ft-tire-row-text">
 			<h3>MICHELIN® PREMIER® A/S</h3>
 			<p>From $ 145.00 per tire. Safe When New. Safe When Worn5. Even when half-worn, it's still safe, thanks to EverGripTM wet-braking technology. The MICHELIN® Premier® A/S tire still stops shorter on wet roads than leading competitors’ brand-new tires4.</p>
 		</div>
 
-		<div class="ft-one-third">
+		<div class="ft-tire-row-lev">
 			<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.04-AM-300x133.png');"></div>
 		</div>
 	</div>
+
+
 	<div class="tire-row">
-		<div class="ft-one-third">
+		<div class="ft-tire-row-image">
 			<img class="alignnone size-medium wp-image-225" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Untitled-111-300x300.png" alt="untitled-111" width="300" height="300" />
 		</div>
 
-		<div class="ft-one-third">
+		<div class="ft-tire-row-text">
 			<h3>MICHELIN® DEFENDER® LTX® M/S</h3>
 			<p>From $157.00 per tire. Stronger. Longer.6 Get the proven tread design of the best-selling MICHELIN® LTX® M/S2 with EverTreadTM compound to provide durable treadlife, no matter the season.</p>
 		</div>
 
-		<div class="ft-one-third">
+		<div class="ft-tire-row-lev">
 			<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.20-AM-300x128.png');"></div>
 		</div>
 	</div>
 
 	<div class="tire-row">
-		<div class="ft-one-third">
+		<div class="ft-tire-row-image">
 			<img class="alignnone size-medium wp-image-224" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Untitled-11-300x300.png" alt="untitled-11" width="300" height="300" />
 		</div>
 
-		<div class="ft-one-third">
+		<div class="ft-tire-row-text">
 			<h3>MICHELIN® PREMIER® LTX®</h3>
 			<p>From $164.00 per tire. Safe When New. Safe When Worn.5 Even when half-worn, the MICHELIN® Premier® LTX® tire still stops shorter on wet roads than leading competitors’ brand-new tires.7</p>
 		</div>
 
-		<div class="ft-one-third">
+		<div class="ft-tire-row-lev">
 			<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.29-AM-300x124.png');"></div>
 		</div>
 	</div>

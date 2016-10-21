@@ -3571,10 +3571,19 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
     margin: 0 auto;
 }
 
+/*.tire-landing-page .content {
+    max-width: 800px;
+    margin: 0 auto;
+}*/
+
+
 .tire-landing-page p {
-    font-size: 15px;
+    font-size: 13px;
 }
 
+.tire-landing-top {
+    padding-bottom: 30px;
+}
 .tire-landing-desc {
     vertical-align: top;
 }
@@ -3586,9 +3595,52 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
 .tire-landing-page-header img {
     width: 100%;
 }
-.tire-landing-page .entry-content {
+.tire-landing-page .content {
     margin: 100px 0;
 }
 .tlp-bottom-logo {
     text-align: center;
+}
+
+.tire-landing-page .entry-content {
+    border: 8px solid #005F34;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tire-landing-desc {
+    border-left: 2px solid black;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.tire-landing-page h3 {
+    font-size: 18px;
+    padding-bottom: 0px;
+    color: black;
+}
+
+.ft-tire-row-image {
+    width: 20%;
+    display: inline-block;
+    margin-right: 1%;
+}
+.ft-tire-row-text,
+.ft-tire-row-lev {
+    width: 38%;
+    display: inline-block;
+}
+
+.ft-tire-row-text {
+ margin-right: 1%;
+}
+
+.tire-landing-logo p {
+    margin-bottom: 0;
+}
+
+.tire-landing-page .site-inner {
+    background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-1.png');
+    background-size: cover;
+    background-position: center;
 }
