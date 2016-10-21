@@ -9,9 +9,6 @@
  * @license GPL-2.0+
  * @link    http://www.studiopress.com/
  */
-
-//* Template Name: Brand Landing Page
-
 remove_filter('the_content', 'wpautop');
 //* Add landing page body class to the head
 add_filter( 'body_class', 'genesis_sample_add_body_class' );
@@ -78,30 +75,4 @@ remove_action ('genesis_before_footer','footer_widgets', 2);
 
 //* Run the Genesis loop
 genesis();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-
-
-
-
-
-
-
-
 

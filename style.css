@@ -3607,7 +3607,9 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
     padding: 10px;
     border-radius: 10px;
 }
-
+.tire-landing-page .entry {
+    border-radius: 10px;
+}
 .tire-landing-desc {
     border-left: 2px solid black;
     padding-left: 20px;
@@ -3624,6 +3626,7 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
     width: 20%;
     display: inline-block;
     margin-right: 1%;
+    vertical-align: top;
 }
 .ft-tire-row-text,
 .ft-tire-row-lev {
@@ -3641,6 +3644,74 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
 
 .tire-landing-page .site-inner {
     background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.ft-tire-row-text {
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bfg-lp .ft-tire-row-image {
+    width: 31%;
+    display: inline-block;
+    margin-right: 1%;
+    vertical-align: top;
+}
+.bfg-lp .ft-tire-row-text,
+.bfg-lp .ft-tire-row-lev {
+    width: 31%;
+    display: inline-block;
+}
+
+.bfg-lp.featured-tires {
+    background-color: #9E9C98;
+}
+
+.bfg-lp.featured-tires p,
+.bfg-lp.featured-tires h3,
+.bfg-lp.featured-tires h2 {
+    color: white;
+}
+
+
+.bfg-lp .tire-row {
+    border-bottom: 3px solid #555;
+    margin-bottom: 20px;
+}
+
+.bfg-lp .tire-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+.bfg-lp .tire-landing-logo,
+.bfg-lp .tire-landing-desc {
+    width: 49%;
+    text-align: center;
+}
+
+
+
+.bfg-lp .tire-landing-logo img {
+    width: 100%;
+    border:6px solid black;
+}
+.bfg-lp .tire-landing-desc {
+    border-left: none;
+}
+
+.page-id-251.tire-landing-page .site-inner {
+    background-image: url('/wp-content/uploads/2016/10/BFGoodrichLandingPageExample-1.png');
     background-size: cover;
     background-position: center;
 }
