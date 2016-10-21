@@ -37,9 +37,17 @@ function ft_side_image() { ?>
 add_action( 'genesis_loop', 'ft_archive_content' );
 function ft_archive_content() { ?>
 
-        <h1 class="ft-archive-title">Locations</h1>
 
+        <h1 class="ft-archive-title">Locations</h1>
         <div class="wrap">
+        <?php 
+
+    genesis_widget_area ('store-search', array(
+        'before' => '<div class="footer-widgets-2 widget-area">',
+        'after' => '</div>',
+    ));
+    ?>
+        
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta vel mauris et fringilla. Quisque at lectus molestie, suscipit nunc a, tristique metus. Fusce maximus risus diam. Cras ut ullamcorper augue. Vestibulum laoreet consequat eros ac viverra. Phasellus non venenatis lorem, a ullamcorper mauris. Donec mi justo, viverra non euismod interdum, varius nec lorem. Etiam urna ipsum, tempus sodales porttitor sed, vehicula id dolor. Aenean convallis tincidunt consequat. Donec vitae euismod justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin fringilla ex sit amet metus lobortis, ut auctor sapien hendrerit.</p>
             
             <?php $ft_query2 = new WP_Query(

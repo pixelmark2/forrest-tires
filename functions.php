@@ -250,3 +250,48 @@ function build_js() {
 	}	
 }
 add_action('wp_enqueue_scripts', 'build_js');
+
+
+
+
+
+
+
+genesis_register_sidebar( array(
+	'id'          => 'store-search',
+	'name'        => __( 'Search for Nearest Store', 'altitude' ),
+	'description' => __( 'Search for Nearest Store', 'altitude' ),
+) );
+
+add_action( 'genesis_after_post_content', 'sp_after_post_widget' );
+	function sp_after_post_widget() {
+		var_dump("hello");
+	if ( is_page( 9 ) )
+		
+		genesis_widget_area( 'store-search', array(
+			'before' => '<div class="after-post widget-area">',
+			'after' => '</div>',
+	) );
+}
+
+
+// add_action('wp_enqueue_scripts', 'add_locator_to_store_locator');
+
+
+
+
+// function add_locator_to_store_locator() {
+// var_dump(is_page('store-locator'));
+// if (is_page(9)) {
+// 		add_action('genesis_loop', 'add_store_locator_widget');
+// 		function add_store_locator_widget() {
+// 	    genesis_widget_area ('store-search', array(
+// 	        'before' => '<div class="footer-widgets-2 widget-area">',
+// 	        'after' => '</div>',
+// 	    ));			
+// 		}
+
+// }
+
+// }
+
