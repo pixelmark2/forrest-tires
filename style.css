@@ -3518,3 +3518,14 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
 .page-id-7 .site-inner {
 	padding: 0 !important;
 }
+
+
+
+
+.store-search-widget.widget-area {
+    float: right;
+    text-align: right;
+    margin: 0 0 20px 20px;
+    max-width: 200px;
+}
+

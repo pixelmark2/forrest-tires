@@ -42,7 +42,7 @@ function ft_archive_content() { ?>
         <div class="wrap">
         <?php
     genesis_widget_area ('store-search', array(
-        'before' => '<div class="footer-widgets-2 widget-area">',
+        'before' => '<div class="store-search-widget widget-area">',
         'after' => '</div>',
     ));?>
     

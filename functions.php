@@ -263,16 +263,6 @@ genesis_register_sidebar( array(
 	'description' => __( 'Search for Nearest Store', 'altitude' ),
 ) );
 
-add_action( 'genesis_after_post_content', 'sp_after_post_widget' );
-	function sp_after_post_widget() {
-		var_dump("hello");
-	if ( is_page( 9 ) )
-		
-		genesis_widget_area( 'store-search', array(
-			'before' => '<div class="after-post widget-area">',
-			'after' => '</div>',
-	) );
-}
 
 
 // add_action('wp_enqueue_scripts', 'add_locator_to_store_locator');
