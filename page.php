@@ -33,9 +33,22 @@ get_footer();
 
 
 ?>
+
+
+
+
+
+
+
+
+
+
+<div class="tire-landing-page-header">
+	<img src="/wp-content/uploads/2016/10/MichelinLandingPageExample-2-300x161.png" alt="michelinlandingpageexample-2" width="300" height="161" class="alignnone size-medium wp-image-244" />
+</div>
 <div class="tire-landing-top">
 	<div class="tire-landing-logo">
-		<img class="alignnone size-medium wp-image-222" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Promise-Plan-Logo-Digital-300x255.png" alt="promise-plan-logo-digital" width="300" height="255" />
+		<img class="alignnone size-medium wp-image-222" src="/wp-content/uploads/2016/10/Promise-Plan-Logo-Digital-300x255.png" alt="promise-plan-logo-digital" width="300" height="255" />
 
 		YOUR SATISFACTION — OUR PROMISE
 
@@ -53,25 +66,27 @@ get_footer();
 	</div>
 </div>
 
-<div class="ft-one-third">
-	<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-10-300x161.png');"></div>
-		<a href="#"><h3>WHY CHOOSE MICHELIN® TIRES?</h3></a>
-		<p>No one makes tires like Michelin. It’s because we insist our tires do more and deliver all the performances you need for safe everyday driving, giving you MICHELIN® Total PerformanceTM.</p>
-</div>
+<div class="tire-lp-vids">
+	<div class="ft-one-third">
+		<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-10-300x161.png');"></div>
+			<a href="#"><h3>WHY CHOOSE MICHELIN® TIRES?</h3></a>
+			<p>No one makes tires like Michelin. It’s because we insist our tires do more and deliver all the performances you need for safe everyday driving, giving you MICHELIN® Total PerformanceTM.</p>
+	</div>
 
 
 
-<div class="ft-one-third">
-	<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-9-300x174.png');"></div>
-		<a href="#"><h3>REDEFINING SAFETY WITH THE MICHELIN® PREMIER® FAMILY</h3></a>
-		<p>MICHELIN® introduces a new automotive safety advance: a tire that stops shorter on wet roads than competitors' new tires – even when half-worn4</p>
-</div>
+	<div class="ft-one-third">
+		<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-9-300x174.png');"></div>
+			<a href="#"><h3>REDEFINING SAFETY WITH THE MICHELIN® PREMIER® FAMILY</h3></a>
+			<p>MICHELIN® introduces a new automotive safety advance: a tire that stops shorter on wet roads than competitors' new tires – even when half-worn4</p>
+	</div>
 
 
-<div class="ft-one-third">
-	<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-7-300x156.png');"></div>
-		<a href="#"><h3>MICHELIN® DEFENDER® TIRE – UNCOMPROMISING LONGEVITY</h3></a>
-		<p>The MICHELIN® Defender® tire offers our longest mileage warranty, exceptional safety and a quiet, comfortable ride.</p>
+	<div class="ft-one-third">
+		<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/MichelinLandingPageExample-7-300x156.png');"></div>
+			<a href="#"><h3>MICHELIN® DEFENDER® TIRE – UNCOMPROMISING LONGEVITY</h3></a>
+			<p>The MICHELIN® Defender® tire offers our longest mileage warranty, exceptional safety and a quiet, comfortable ride.</p>
+	</div>
 </div>
 
 
@@ -92,7 +107,7 @@ get_footer();
 		</div>
 
 		<div class="ft-one-third">
-			<img class="alignnone size-medium wp-image-226" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.04-AM-300x133.png" alt="screen-shot-2016-10-21-at-10-50-04-am" width="300" height="133" />
+			<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.04-AM-300x133.png');"></div>
 		</div>
 	</div>
 	<div class="tire-row">
@@ -106,7 +121,7 @@ get_footer();
 		</div>
 
 		<div class="ft-one-third">
-			<img class="alignnone size-medium wp-image-227" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.20-AM-300x128.png" alt="screen-shot-2016-10-21-at-10-50-20-am" width="300" height="128" />
+			<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.20-AM-300x128.png');"></div>
 		</div>
 	</div>
 
@@ -121,12 +136,13 @@ get_footer();
 		</div>
 
 		<div class="ft-one-third">
-			<img class="alignnone size-medium wp-image-228" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.29-AM-300x124.png" alt="screen-shot-2016-10-21-at-10-50-29-am" width="300" height="124" />
+			<div class="tire-post-image" style="background-image: url('/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-10.50.29-AM-300x124.png');"></div>
 		</div>
 	</div>
 
 </div>
 
 
-
-<img class="alignnone size-medium wp-image-232" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-11.10.07-AM-300x124.png" alt="screen-shot-2016-10-21-at-11-10-07-am" width="300" height="124" />
+<div class="tlp-bottom-logo">
+	<img class="alignnone size-medium wp-image-232" src="http://skytopphotovideo.dev/wp-content/uploads/2016/10/Screen-Shot-2016-10-21-at-11.10.07-AM-300x124.png" alt="screen-shot-2016-10-21-at-11-10-07-am" width="300" height="124" />
+</div>

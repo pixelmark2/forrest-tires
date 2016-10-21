@@ -3537,3 +3537,58 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
 .tire-landing-page .ft-one-third .tire-post-image {
     background-size: cover;
 }
+
+.tire-landing-page .ft-one-third img {
+    float: right;
+}
+
+.tire-landing-logo {
+    width: 40%;
+    display: inline-block;
+}
+
+.tire-landing-desc {
+    width: 58%;
+    display: inline-block;
+}
+
+
+.tire-landing-page .ft-one-third {
+    width: 30%;
+    margin-right: 3%;
+}
+.tire-landing-page .ft-one-third:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.featured-tires .ft-one-third .tire-post-image {
+    background-size: contain;
+    background-position: top;
+}
+
+.tire-landing-page .content-sidebar-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tire-landing-page p {
+    font-size: 15px;
+}
+
+.tire-landing-desc {
+    vertical-align: top;
+}
+.featured-tires {
+    background-color: #D3DDE7;
+    padding: 20px;
+}
+
+.tire-landing-page-header img {
+    width: 100%;
+}
+.tire-landing-page .entry-content {
+    margin: 100px 0;
+}
+.tlp-bottom-logo {
+    text-align: center;
+}
