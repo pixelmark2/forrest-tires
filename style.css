@@ -3529,3 +3529,11 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
     max-width: 200px;
 }
 
+
+.tire-landing-page .ft-one-third {
+    vertical-align: top;
+}
+
+.tire-landing-page .ft-one-third .tire-post-image {
+    background-size: cover;
+}
