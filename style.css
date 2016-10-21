@@ -3715,3 +3715,13 @@ button.ft-menu-title.dashicons-before.dashicons-menu::before {
     background-size: cover;
     background-position: center;
 }
+
+.tire-brands {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tire-brands img {
+    border: none !important;
+    max-width: 80%;
+}
